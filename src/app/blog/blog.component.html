@@ -1,0 +1,17 @@
+
+<h1>Blog de Noticias</h1>
+<div class="container">
+    <ul class="col">
+        <app-lista-noticia
+        [arrayNoticia]="arrayNoticia" 
+        [urle_img2]="urle_img2" 
+        [urle_img1]="urle_img1"
+        [urle_img3]="urle_img3">
+        </app-lista-noticia>
+    
+    </ul>
+    <!-- <hr> -->
+    <ul class="col">
+        <app-form (oNnuevaNoticia)="agregarNuevaNoticia($event)" ></app-form>
+    </ul>
+</div>

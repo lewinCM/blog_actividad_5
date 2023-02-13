@@ -1,0 +1,9 @@
+<h1>Formulario</h1>
+
+<form (ngSubmit)="Agregar()">
+    <input name="Titulo1" type="text" placeholder="Titulo" [(ngModel)]="nuevaNoticia.Titulo1">
+    <input name="Imagen1" type="text" placeholder="descripcion" [(ngModel)]="nuevaNoticia.Imagen1">
+    <input name="texto1" type="text" placeholder="img" [(ngModel)]="nuevaNoticia.texto1">
+    <input name="fecha1" type="text" placeholder="fecha" [(ngModel)]="nuevaNoticia.fecha1">
+    <button type="submit">Agregar</button>
+</form>

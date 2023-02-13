@@ -1,0 +1,33 @@
+<Section class=" row main-noticias">
+    <div class="col">
+      <h3 class=""> {{titulo_noticia}}</h3>
+      <!-- primera noticia -->
+      <ul *ngFor=" let noticias of noticia2">
+        <h1 class="noticia">{{noticias.Titulo2}}</h1>
+        <!-- <img [src]="urle_img2" alt=""> -->
+        <img [src]="urle_img2" alt="">
+        <p>{{noticias.texto2}}</p>
+        <small>Fecha:{{noticias.fecha2}}</small>
+      </ul>
+      <!-- segunda noticia -->
+      <ul class="SecondNoticie" *ngFor=" let noticias of noticia1">
+        <h1 class="noticia">{{noticias.Titulo1}}</h1>
+        <!-- <img [src]="urle_img1" alt=""> -->
+        <img [src]="urle_img1" alt="">
+        <p>{{noticias.texto1}}</p>
+        <small>Fecha:{{noticias.fecha1}}</small>
+  
+        <!-- otra seccion de noticias pero con @input -->
+        <h1>{{arrayNoticia[0].Titulo1}}</h1>
+        <img [src]="urle_img3" alt="">
+        <p>{{arrayNoticia[0].texto1}}</p>
+        <p>{{arrayNoticia[0].fecha1}} :<small>Esta seccion es enviada desde padre a hijo</small>
+        </p>
+      </ul>
+
+     
+    
+  
+    </div>
+  
+  </Section>
